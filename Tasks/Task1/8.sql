@@ -5,5 +5,5 @@
 --то вывести значение 'UNKNOWN':
 SELECT ProductID
 	,[Name]
-	,COALESCE(Style, 'Weight','UNKNOWN') AS Measurement
+	,COALESCE(Style, CAST([Weight] AS VARCHAR(15)),'UNKNOWN') AS Measurement
 FROM Production.Product;

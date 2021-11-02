@@ -4,4 +4,4 @@
 SELECT ScrapReasonID
 	,[Name]
 FROM Production.ScrapReason
-WHERE [Name] IN ('drill');
+WHERE [Name] LIKE '%drill%';
