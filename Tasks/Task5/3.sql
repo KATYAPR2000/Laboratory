@@ -11,6 +11,6 @@ INNER JOIN Classes
 ON Classes.ClassID = Timetable.ClassID
 INNER JOIN Teachers
 ON Teachers.SubjectID = Subjects.SubjectID
-LEFT OUTER JOIN Persons
+INNER JOIN Persons
 ON Persons.PersonID = Teachers.PersonID
 WHERE Teachers.TeacherID = 4;
